@@ -1,24 +1,3 @@
-<style>
-*{
-  font-size:14px;
-}
-  table {
-      width: 100%;
-      border-collapse: collapse;
-      
-  }
-  table, th, td {
-      border: 1px solid #f78166;
-  }
-  th, td {
-      padding: 8px;
-      text-align: left;
-  }
-  th {
-      background-color: #161b22;
-  }
-</style>
-
 # জাভাস্ক্রিপ্টের চিটশিট
 
 > Click ★ if you like the project. Your contributions are heartily ♡ welcome.
@@ -27,7 +6,7 @@
 ### সূচীপত্র
 
 <table>
-  <thead align="center">
+  <thead align="center" width="100" >
     <tr border: none;>
       <td><b>অধ্যায়</b></td>
       <td><b>বিষয়</b></td>
