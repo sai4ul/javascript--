@@ -1,3 +1,20 @@
+<style>
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  table, th, td {
+      border: 1px solid black;
+  }
+  th, td {
+      padding: 8px;
+      text-align: left;
+  }
+  th {
+      background-color: #f2f2f2;
+  }
+</style>
+
 # জাভাস্ক্রিপ্টের চিটশিট
 
 > Click ★ if you like the project. Your contributions are heartily ♡ welcome.
@@ -49,7 +66,6 @@
 
 
 ### ভ্যারিয়েবল
-
 
 0. value সংরক্ষন করার কাজে ভ্যারিয়েবল ব্যবহার করা হয়।
 00. ভ্যারিয়েবলের মধ্যে মান রাখার জন্য সমান(=) চিহ্ন ব্যবহার করা হয় ।
@@ -139,10 +155,7 @@
 </table>
 
 
-
-
 ### আইডেন্টিফায়ার
-
 
 0. আইডেন্টিফায়ার সমূহ হচ্ছে নাম
 1. জাভাস্ক্রিপ্টে ভ্যারিয়েবল,কীওয়ার্ড এবং ফাংশনের নাম দেওয়ার জন্য আইডেন্টিফায়ার ব্যবহার করা হয়।
@@ -328,16 +341,12 @@ Lowercase – Bangladesh , Uppercase – BANGLADESH , CamelCase – banglaDesh
           Let and cosnt block scope <br>
           {   let x = 2;  }
       </td>
-    </tr>
-    <tr>
       <td>
           0. ফাংশনের মধ্যে যে ভ্যারিয়েবল ডিক্লেয়ার করা হয় তাকে লোকাল ভ্যারিয়েবল বলে। যা শুধুমাত্র ফাংশনের মধ্যেই এক্সেস করা সম্ভব। <br>
           2. যেহেতু লোকাল ভ্যারিয়েবল শুধুমাত্র একটি ফাংশনের ভিতরে এক্সেস করা যায়, তাই একই নামের ভ্যারিয়েবল বিভিন্ন ফাংশনের ভিতরে ব্যবহার করা যেতে পারে। <br>
           3. যখন ফাংশনকে কল করা হয় তখন লোকাল ভ্যারিয়েবল তৈরি হয় এবং ফাংশনের কাজ সম্পন্ন হলে লোকাল ভ্যারিয়েবলগুলো ডিলেট হয়ে যায়। <br>
           ফাংশন আর্গুমেন্ট  (প্যারামিটার ) ফাংশনের ভিতরে লোকাল ভ্যারিয়েবল হিসেবে কাজ করে। <br>
-      </td>
-    </tr>
-    <tr>
+      </td> 
       <td>
           0. var গ্লোবাল স্কোপ , ফাংশন ছাড়া যে কোন জায়গায় var লিখলে এটি গ্লোবাল scope থাকে । <br>
           1. ফাংশনের বাইরে যে ভ্যারিয়েবলকে ডিক্লেয়ার করা হয় তাকে গ্লোবাল ভ্যারিয়েবল বলে। <br>
@@ -349,7 +358,6 @@ Lowercase – Bangladesh , Uppercase – BANGLADESH , CamelCase – banglaDesh
     </tr>
   </tbody>
 </table>
-
 
 ### Data Types in JavaScript
 
@@ -367,7 +375,6 @@ Tow Types of Data
 	Number- 1,2,45,1.3,3.4, 102,22
 	Boolean- True, false
 	Undefined, Null, Empty Values
-
 
 ### Composite/complex data types
 Object, function, Array, Date ,RegExp
@@ -393,7 +400,6 @@ Object, function, Array, Date ,RegExp
           2. typeof() অপারেটর একটি variable নয়।  <br>
           3. typeof অপারেটর সর্বদা একটি স্ট্রিং Return করে । <br>
       </td>
-    </tr>
       <td>
           NaN type number <br>
           array type object <br>
@@ -422,8 +428,6 @@ Object, function, Array, Date ,RegExp
         2.প্রিমিটিভ ডাটাটাইপ গুলোএকেঅপরের সাথে তাদের ভ্যালু দ্বারা তুলনা করে।
         3.যখন আমরা কোন প্রিমিটিভ ডাটা টাইপকে অন্য কোন ভেরিয়েবলে অ্যাসাইন করি, তখন তার ভ্যালু কপি হয়ে নতুন ভেরিয়েবলে অ্যাসাইন হয়।
       </td>
-    </tr>
-    <tr>
       <td>
           1. নন-প্রিমিটিভ ডাটা mutable বা পরিবর্তনীয়।
           2.  একটি অবজেক্ট তৈরি হয়ে যাওয়ার পরে ও অবজেক্টের ভ্যালু পরিবর্তন হতে পারে
@@ -434,8 +438,6 @@ Object, function, Array, Date ,RegExp
     </tr>
   </tbody>
 </table>
-
-
 
 ### Type Conversion
 
@@ -568,6 +570,349 @@ Object, function, Array, Date ,RegExp
       </tr>
   </tbody>
 </table>
+
+### String
+1. string কে Double Quotation অথাবা Single Quotation এরভিতরেরাখতেপারি var a = "Tasnim"; <br>   
+2. যে কোন ডাটা টাইপ এর ডাটা রাখা যায় । <br>
+3.স্ট্রিংয়ের মধ্যে বিশেষ অক্ষর ব্যবহার করতে চাইলে আপনাকে ব্যাকস্ল্যাশ(\) ব্যবহার করতে হবেঃ <br>
+
+### String Method
+<table>
+   <tbody>
+      <tr>
+        <td>length</td>
+        <td>slice()</td>
+        <td>substring()</td>
+        <td>substr()</td>
+        <td>concat()</td>
+        <td>padStart()</td>
+      </tr>
+      <tr>
+        <td>replace()</td>
+        <td>replaceAll()</td>
+        <td>toUpperCase()</td>
+        <td>toLowerCase()</td>
+        <td>padEnd()</td>
+        <td>trim()</td>
+      </tr>
+      <tr>
+        <td>trimStart()</td>
+        <td>trimEnd()</td>
+        <td>charCodeAt()</td>
+        <td>charAt()</td>
+        <td>split()</td>
+      </tr>
+  </tbody>
+</table>
+
+### String Search Methods
+<table>
+   <tbody>
+      <tr>
+        <td>indexOf()</td>
+        <td>lastIndexOf()</td>
+        <td>search()</td>
+      </tr>
+      <tr>
+        <td>match()</td>
+        <td>matchAll()</td>
+        <td>includes()</td>
+      </tr>
+      <tr>
+        <td>startsWith()</td>
+        <td>endsWith()</td>
+      </tr>
+  </tbody>
+</table>
+
+### Template Literals
+<table>
+   <tbody>
+      <tr>
+        <td>indexOf()</td>
+        <td>lastIndexOf()</td>
+        <td>search()</td>
+      </tr>
+      <tr>
+        <td>match()</td>
+        <td>matchAll()</td>
+        <td>includes()</td>
+      </tr>
+      <tr>
+        <td>startsWith()</td>
+        <td>endsWith()</td>
+      </tr>
+  </tbody>
+</table>
+
+### String HTML Wrapper Methods
+<table>
+   <tbody>
+      <tr>
+        <td>anchor()</td>
+        <td>big()</td>
+        <td>blink()</td>
+        <td>bold()</td>
+         <td>link()</td>
+      </tr>
+      <tr>
+        <td>fixed()</td>
+        <td>fontcolor()</td>
+        <td>fontsize()</td>
+        <td>italics()</td>
+      </tr>
+      <tr>
+        <td>small()</td>
+        <td>strike()</td>
+        <td>sub()</td>
+        <td>sup()</td>
+      </tr>
+  </tbody>
+</table>
+
+### Escape Character
+
+ <table>
+   <thead align="center">
+    <tr border: none;>
+        <th><b>Escape Sequence </b></th>
+        <th><b>Result </b></th>
+        <th~><b>Description </b></th~>
+    </tr>
+  </thead>
+    <tbody>
+        <tr>
+            <td>\'</td>
+            <td>'</td>
+            <td>Single quote</td>
+        </tr>
+        <tr>
+            <td>\"</td>
+            <td>"</td>
+            <td>Double quote</td>
+        </tr>
+        <tr>
+            <td>\\</td>
+            <td>\</td>
+            <td>Backslash</td>
+        </tr>
+        <tr>
+            <td>\n</td>
+            <td>(new line)</td>
+            <td>New line</td>
+        </tr>
+        <tr>
+            <td>\r</td>
+            <td>(carriage return)</td>
+            <td>Carriage return</td>
+        </tr>
+        <tr>
+            <td>\t</td>
+            <td>(tab space)</td>
+            <td>Tab space</td>
+        </tr>
+        <tr>
+            <td>\b</td>
+            <td>(backspace)</td>
+            <td>Backspace</td>
+        </tr>
+        <tr>
+            <td>\f</td>
+            <td>(form feed)</td>
+            <td>Form feed</td>
+        </tr>
+    </tbody>
+</table>
+
+### String Method
+1. সকল স্ট্রিং মেথডই একটি নতুন স্ট্রিং রিটার্ন করে। তারা মূল স্ট্রিংকে পরিবর্তন করে না। <br>
+2. স্ট্রিং অপরিবর্তনীয়ঃ স্ট্রিংগুলো পরিবর্তন করা যাবে না শুধুমাত্র প্রতিস্থাপন করা যায়। <br>
+3. স্ট্রিংকে অ্যারের মত করে এক্সেস করা নিরাপদ নয় , আপনি হয়তো স্ট্রিংকে অ্যারের মত করে এক্সেস করা দেখতে পারেন , যদি আপনি একটি স্ট্রিংকে অ্যারে আকারে পড়তে চান, প্রথমে একে অ্যারেতে রূপান্তর করুন। <br>
+
+<table>
+    <thead align="center">
+      <tr border: none;>
+          <th><b>Method</b></th>
+          <th><b>Description </b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Length()</td>
+            <td>একটি স্ট্রিংয়ের দৈর্ঘ্য নির্ধারন করে। স্ট্রিংটি কয়টি ক্যারেক্টার নিয়ে গঠিত তা রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>charAt()</td>
+            <td>স্ট্রিং ক্যারেক্টারকে ভাগ করার দুইটি পদ্ধতি রয়েছেঃ 1. charAt(position) 2. charCodeAt(position) নির্দিষ্ট ইনডেক্স(পজিশনের) ক্যারেক্টারকে রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>charCodeAt()</td>
+            <td>নির্দিষ্ট ইনডেক্সের ক্যারেক্টারের ইউনিকোড রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>concat()</td>
+            <td>স্ট্রিংকে যুক্ত করে এবং একটি নতুন স্ট্রিং তৈরি করে।</td>
+        </tr>
+        <tr>
+            <td>endsWith()</td>
+            <td>একটি স্ট্রিং নির্দিষ্ট স্ট্রিং বা ক্যারেক্টার দিয়ে শেষ হয় কিনা তা চেক করে।</td>
+        </tr>
+        <tr>
+            <td>fromCharCode()</td>
+            <td>ইউনিকোড ভ্যালুকে ক্যারেক্টারে পরিনত করে।</td>
+        </tr>
+        <tr>
+            <td>includes()</td>
+            <td>একটি স্ট্রিংয়ের মধ্যে নির্দিষ্ট স্ট্রিং বা ক্যারেক্টার আছে কিনা তা চেক করে।</td>
+        </tr>
+        <tr>
+            <td>indexOf()</td>
+            <td>একটি স্ট্রিংয়ের মধ্যে নির্দিষ্ট একটি ভ্যালুর প্রথম পজিশন রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>lastIndexOf()</td>
+            <td>একটি স্ট্রিংয়ের মধ্যে নির্দিষ্ট একটি ভ্যালুর শেষ পজিশন রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>localeCompare()</td>
+            <td>দুইটি স্ট্রিংয়ের মধ্যে তুলনা করে।</td>
+        </tr>
+        <tr>
+            <td>match()</td>
+            <td>একটি রেগুলার এক্সপ্রেশনে একটি স্ট্রিং খুজে বের করে এবং রেজাল্ট দেখায়।</td>
+        </tr>
+        <tr>
+            <td>repeat()</td>
+            <td>স্ট্রিংকে পরিবর্তন করে না। এটা নতুন একটি স্ট্রিং রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>replace()</td>
+            <td>একটি স্ট্রিংয়ের মধ্যে একটি নির্দিষ্ট ভ্যালু অথবা একটি রেগুলার এক্সপ্রেশন খুজে বের করে, তা প্রতিস্থাপন করে এবং যেখানে নির্দিষ্ট ভ্যালু প্রতিস্থাপিত হয়েছে তার একটি নতুন স্ট্রিং তৈরি করে।</td>
+        </tr>
+        <tr>
+            <td>search()</td>
+            <td>একটি স্ট্রিংয়ের মধ্য়ে একটি নির্দিষ্ট ভ্যালু অথবা একটি রেগুলার এক্সপ্রেশন খুজে বের করে এবং তার পজিশন রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>slice()</td>
+            <td>স্ট্রিংয়ের একটি অংশকে ভাগ করে এবং বিভক্ত অংশটিকে নতুন একটি স্ট্রিংয়ে রিটার্ন করে। মেথডটি দুইটি প্যারামিটার গ্রহন করে: শুরুর অবস্থান(start index) এবং শেষের অবস্থান(end index)।</td>
+        </tr>
+        <tr>
+            <td>split()</td>
+            <td>একটি স্ট্রিংকে অ্যারেতে রূপান্তরিত করা যেতে পারে।</td>
+        </tr>
+        <tr>
+            <td>startsWith()</td>
+            <td>একটি স্ট্রিং নির্দিষ্ট ক্যারেক্টার দিয়ে শুরু হয়েছে কিনা তা চেক করে।</td>
+        </tr>
+        <tr>
+            <td>substr()</td>
+            <td>মেথডটি slice() মেথডের মতই। পার্থক্য হচ্ছে দ্বিতীয় প্যারামিটারটিতে কতটি ক্যারেক্টার ভাগ করতে চান তা উল্লেখ করতে হবে।</td>
+        </tr>
+        <tr>
+            <td>substring()</td>
+            <td>মেথডটি slice() মেথডের মতই। পার্থক্য হচ্ছে substring() মেথড ঋনাত্মক ইন্ডেক্স ভ্যালু গ্রহণ করে না।</td>
+        </tr>
+        <tr>
+            <td>toLocaleLowerCase()</td>
+            <td>লোকাল হোস্টের উপর ভিত্তিকরে স্ট্রিং কে ছোট হাতের অক্ষরে(lower case) রপান্তর করে।</td>
+        </tr>
+        <tr>
+            <td>toLocaleUpperCase()</td>
+            <td>লোকাল হোস্টের উপর ভিত্তিকরে স্ট্রিং কে বড় হাতের অক্ষরে(Upper case) রপান্তর করে।</td>
+        </tr>
+        <tr>
+            <td>toLowerCase()</td>
+            <td>একটি স্ট্রিংকে ছোট হাতের অক্ষরে রপান্তর করে।</td>
+        </tr>
+        <tr>
+            <td>toString()</td>
+            <td>স্ট্রিং অবজেক্টের ভ্যালু রিটার্ন করে।</td>
+        </tr>
+        <tr>
+            <td>toUpperCase()</td>
+            <td>স্ট্রিংকে বড় হাতের অক্ষরে রপান্তর করে।</td>
+        </tr>
+        <tr>
+            <td>trim()</td>
+            <td>একটি স্ট্রিংয়ের উভয়দিকের স্পেস মুছে দেয়।</td>
+        </tr>
+        <tr>
+            <td>valueOf()</td>
+            <td>একটি স্ট্রিং অবজেক্টের প্রিমিটিভ ভ্যালু রিটার্ন করে।</td>
+        </tr>
+    </tbody>
+</table>
+
+
+### String HTML Wrapper Methods
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>anchor()</td>
+            <td>অ্যাংকর তৈরি করে।</td>
+        </tr>
+        <tr>
+            <td>big()</td>
+            <td>স্ট্রিংয়ের ফন্টের আকার বড় করে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>blink()</td>
+            <td>ব্লিংকিং স্ট্রিং প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>bold()</td>
+            <td>স্ট্রিংকে বোল্ড করে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>fixed()</td>
+            <td>fixed-pitch ফন্ট ব্যবহার করে একটি স্ট্রিং প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>fontcolor()</td>
+            <td>নির্দিষ্ট কালার ব্যবহার করে স্ট্রিং প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>fontsize()</td>
+            <td>নির্দিষ্ট সাইজ ব্যবহার করে স্ট্রিং প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>italics()</td>
+            <td>স্ট্রিংকে ইতালিক অক্ষরে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>link()</td>
+            <td>স্ট্রিংকে হাইপার লিংক হিসেবে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>small()</td>
+            <td>ছোট ফন্ট ব্যবহার করে একটি স্ট্রিং প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>strike()</td>
+            <td>স্ট্রিংয়ের মাঝে দাগ কেটে স্ট্রিংকে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>sub()</td>
+            <td>স্ট্রিংয়ের টেক্সটকে সাবস্ক্রিপ্ট টেক্সট হিসেবে প্রদর্শন করে।</td>
+        </tr>
+        <tr>
+            <td>sup()</td>
+            <td>স্ট্রিংয়ের টেক্সটকে সুপারস্ক্রিপ্ট টেক্সট হিসেবে প্রদর্শন করে।</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 
 
 
